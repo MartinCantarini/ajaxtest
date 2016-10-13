@@ -1,0 +1,14 @@
+<%= form_for @product, remote: true, html: { style: "display:inline;" } do |f| %>
+        <ul class="errors"></ul>
+
+
+          <%= f.label :name%>
+          <%= f.text_field :name%>
+
+
+          <%= f.label :price%>
+          <%= f.text_field :price%>
+        <%= f.submit%>
+        <%= link_to "Cancel", "#"%>
+
+    <% end %>

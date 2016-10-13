@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="well">
+    <%= link_to "New Product", new_product_path, remote: true%>
+  </div>
+  <div class="new-product"></div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </thead>
+    <tbody class="product-index">
+      <%= render "index" %>
+    </tbody>
+  </table>
+</div>
+<div id="formulario"></div>

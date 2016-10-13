@@ -1,0 +1,15 @@
+
+  <div class="formulario-header">
+    <h3>Delete Product</h3>
+  </div>
+
+  <ul class="errors"></ul>
+  
+  </div>
+  <div class="formulario-footer">
+    Are you sure you wish to delete <b><%= @product.name %></b>?
+    <%= link_to "Yes, Delete This Product", product_path(@product), method: :delete, remote: true%>
+    <%= link_to "No, Please Don't", "#"%>
+  </div>
+  </div>
+</div>
